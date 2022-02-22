@@ -1,4 +1,7 @@
-# ZakharI2C
+---
+title: CAN bus
+thumbnail: Regs.svg
+---
 
 [Back to README](../README.md)
 
@@ -16,7 +19,7 @@ This file describes I2C communication used by Zakhar's systems
 
 Minimal register map:
 
-<img src="i2c/Regs.svg" width="150"/>
+<img src="Regs.svg" width="150"/>
 
 - `REG_CMD` - Command register. The device is reading commands from here
 - `REG_ARG` - Optional argument of the command
@@ -38,7 +41,7 @@ To read master should consequently:
 
 Then read one byte - the value from the register
 
-<img src="i2c/Read.svg" width="800"/>
+<img src="Read.svg" width="800"/>
 
 To write data master should consequently:
 
@@ -48,7 +51,7 @@ To write data master should consequently:
 - Send Data byte(s)
 - Send Stop state
 
-<img src="i2c/Write.svg" width="600"/>
+<img src="Write.svg" width="600"/>
 
 ## Command writing process
 
@@ -60,7 +63,7 @@ To write data master should consequently:
 - D) Master writes a command to the `REG_CMD` (command is any value in the range `0x01`...`0xFE`)
 - E) When the command is executed, slave sets CMD and ARG registers to 0x00
 
-<img src="i2c/Cmd.svg" width="500"/>
+<img src="./Cmd.svg" width="500"/>
 
 ### Simplified process
 

@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+    ],
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Run Hugo server",
+                "type": "shell",
+                "command": "hugo",
+                "args": [
+                    "server",
+                    ],
+                "options": {
+                    "cwd": "${workspaceFolder}/src",
+                }
+            },
+        ]
+    },
+    "settings": {}
+}
