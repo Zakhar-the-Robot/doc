@@ -1,0 +1,263 @@
+<!doctype html><html lang=en-us dir=ltr>
+<head>
+<meta name=generator content="Hugo 0.92.2">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.
+To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.
+ Blog (hackaday.io) Facebook Instagram  About #  Assumed: the humans can interact the most effective and seamless with other living creatures
+Suggested: to develop a robot&rsquo;s program structure in the way when basics of its logic are understandable from the robot&rsquo;s behavior.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Main">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zakhar-the-robot.github.io/site/">
+<title>Main | Zakhar the Robot</title>
+<link rel=manifest href=/site/manifest.json>
+<link rel=icon href=/site/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/site/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/site/flexsearch.min.js></script>
+<script defer src=/site/en.search.min.070a66440be43f02db88de6f4f185e27e554481b57dba3a92a2bd7fcdbe6b091.js integrity="sha256-BwpmRAvkPwLbiN5vTxheJ+VUSBtX26OpKivX/NvmsJE=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://zakhar-the-robot.github.io/site/index.xml title="Zakhar the Robot">
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/site/><span>Zakhar the Robot</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=/site/docs/canbus/>Canbus</a>
+</li>
+<li>
+<a href=/site/docs/devices/>Devices</a>
+</li>
+<li>
+<a href=/site/docs/future/>Future</a>
+</li>
+<li>
+<a href=/site/docs/i2c/>I2c</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/site/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Main</strong>
+<label for=toc-control>
+<img src=/site/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#about>About</a></li>
+<li><a href=#attention-developers-wanted>Attention: DEVELOPERS WANTED</a></li>
+<li><a href=#structure>Structure</a>
+<ul>
+<li><a href=#hardware>Hardware</a></li>
+<li><a href=#repositories>Repositories</a></li>
+</ul>
+</li>
+<li><a href=#internal-standards>Internal standards</a></li>
+<li><a href=#related-articles>Related articles</a></li>
+<li><a href=#milestones>Milestones</a></li>
+<li><a href=#license>License</a></li>
+<li><a href=#support>Support</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><p><img src=logo-light.png alt></p>
+<p>Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.</p>
+<p>To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.</p>
+<ul>
+<li><a href=https://hackaday.io/project/171888-zakhar-the-robot>Blog (hackaday.io)</a></li>
+<li><a href=https://www.facebook.com/groups/zakhar>Facebook</a></li>
+<li><a href=https://www.instagram.com/zakhar_the_robot/>Instagram</a></li>
+</ul>
+<h2 id=about>
+About
+<a class=anchor href=#about>#</a>
+</h2>
+<p><strong>Assumed</strong>: the humans can interact the most effective and seamless with other living creatures</p>
+<p><strong>Suggested</strong>: to develop a robot&rsquo;s program structure in the way when basics of its logic are understandable from the robot&rsquo;s behavior. The behavior should mimic the animal one (as the human is an animal too).</p>
+<p>Suggested to split the program into three parts:</p>
+<ul>
+<li>Conscious</li>
+<li>Unconscious</li>
+<li>Reflexes</li>
+</ul>
+<p><strong>Conscious</strong> represents simple intentions: move forward, sleep, run away, search something, etc.</p>
+<p><strong>Unconscious</strong> is responsible to solve how to realize those intentions: what to do for moving, how to behave if looking something etc.</p>
+<p><strong>Reflexes</strong> are small algorithms that can monopolize Unconscious from Conscious in some very explicit situations. E.g. panic and fear if something breaking, convulsions if robot stuck and can&rsquo;t move as the conscious tells.</p>
+<p>An article with detailed explanations and a demonstration:</p>
+<ul>
+<li><a href=https://blog.agramakov.me/posts/2020-05-29-robot-with-the-conscious/>&ldquo;Robot with the Conscious: Imitating animal behavior for reducing user&rsquo;s anxiety&rdquo;</a></li>
+</ul>
+<h2 id=attention-developers-wanted>
+Attention: DEVELOPERS WANTED
+<a class=anchor href=#attention-developers-wanted>#</a>
+</h2>
+<p>The project is ambitious, and I cannot move it that fast as I want to. If you are as interested in robotics as I am, let&rsquo;s try to work together. I&rsquo;m confident that we will develop something unique.</p>
+<p>The project covers many different areas and programming languages, including:</p>
+<ul>
+<li>3D modeling (for simulation)</li>
+<li>3D printing (for the robot itself)</li>
+<li>C / C ++ development (embedded: Arduino, ESP32, STM32; hi-level: Linux, Robot Operating System - ROS)</li>
+<li>Computer vision (image recognition, especially for indoor navigation)</li>
+<li>Hardware design (robot modules)</li>
+<li>Python development (Robot Operating System - ROS)</li>
+</ul>
+<p>Please look at the <a href=#repositories>list of repositories</a> and non-green <a href=#milestones>milestones</a> below, see the issues, and take something if you want. If you want to participate but do not know where to start, create an issue in this repository, and we will figure this out.</p>
+<p><strong>Any volunteer participation will be appreciated!</strong></p>
+<h2 id=structure>
+Structure
+<a class=anchor href=#structure>#</a>
+</h2>
+<h3 id=hardware>
+Hardware
+<a class=anchor href=#hardware>#</a>
+</h3>
+<p><code>TODO: replace with CAN bus devices</code></p>
+<p>Zakhar consists of 4 devices:</p>
+<ul>
+<li>Brain Platform (<a href=https://github.com/an-dr/zakhar_brain>source</a>)</li>
+<li>Face Module (<a href=https://github.com/an-dr/zakhar-face-module>source</a>)</li>
+<li>Moving Platform (<a href=https://github.com/an-dr/zakhar_platform>source</a>)</li>
+<li>Sensor Platform (<a href=https://github.com/an-dr/zakhar_sensors>source</a>)</li>
+</ul>
+<p>Each platform has it&rsquo;s own battery and can work standalone. It&rsquo;s structures are represented on pictures bellow.</p>
+<h3 id=repositories>
+Repositories
+<a class=anchor href=#repositories>#</a>
+</h3>
+<p>The hugest parts of the project called gears. Currently there are 3 gears that divided into smaller parts:</p>
+<ul>
+<li><a href=https://github.com/an-dr/zakhar_io>zakhar_io</a> - interaction
+<ul>
+<li><a href=https://github.com/an-dr/zakhar-face-module>zakhar-face-module: Zakhar&rsquo;s part which is responsible for facial expressions</a></li>
+<li><a href=https://github.com/an-dr/zakhar_sensors>zakhar_sensors: Sensors implementation for the Zakhar Project</a></li>
+</ul>
+</li>
+<li><a href=https://github.com/an-dr/zakhar_brain>zakhar_brain</a> - thinking
+<ul>
+<li><a href=https://github.com/an-dr/zakharos_core>zakharos_core: Software core (ROS-based) for the Zakhar project</a></li>
+<li><a href=https://github.com/an-dr/zakhar_pycore>zakhar_pycore: Base python package for the Zakhar project</a></li>
+<li><a href=https://github.com/an-dr/zakhar_service>zakhar_service: Software for service purposes</a></li>
+</ul>
+</li>
+<li><a href=https://github.com/an-dr/zakhar_platform>zakhar_platform</a> - moving (ESP32-powered motorized platform)</li>
+</ul>
+<p>Other related repositories:</p>
+<ul>
+<li><a href=https://github.com/an-dr/zakhar_docker>zakhar_docker: Docker files with Zakhar environment</a></li>
+<li><a href=https://github.com/an-dr/zakhar_faces>zakhar_faces: Zakhar&rsquo;s facial expressions</a></li>
+<li><a href=https://github.com/an-dr/zakhar_kicadlib>zakhar_kicadlib: Library with components for Zakhar project</a></li>
+<li><a href=https://github.com/an-dr/zakhar_proto>zakhar_proto: Repository for experiments and prototyping. Part of the Zakhar project</a></li>
+<li><a href=https://github.com/an-dr/r_giskard>r_giskard: Small project for experiments with unconditioned and conditioned reflexes</a></li>
+</ul>
+<h2 id=internal-standards>
+Internal standards
+<a class=anchor href=#internal-standards>#</a>
+</h2>
+<ul>
+<li><a href=docs/devices.md>I2C devices</a></li>
+<li><a href=docs/i2c.md>ZakharI2C standard</a></li>
+<li><a href=docs/canbus.md>ZakharCAN standard</a></li>
+</ul>
+<h2 id=related-articles>
+Related articles
+<a class=anchor href=#related-articles>#</a>
+</h2>
+<ul>
+<li><a href=https://blog.agramakov.me/2020/05/29/robot-with-the-conscious/>2020/05/29 - Robot with the Conscious: Imitating animal behavior for reducing user’s anxiety - technical_</a></li>
+<li><a href=https://blog.agramakov.me/2019/06/01/zakhars-concept/>2019/06/01 - Zakhar’s Concept – technical_</a></li>
+<li><a href=https://blog.agramakov.me/2019/05/05/zakhar-relaunch-zakha_ros/>2019/05/05 - Zakhar relaunch: Zakha_ros – technical_</a></li>
+<li><a href=https://blog.agramakov.me/2019/01/10/zakhar-the-robot/>2019/01/10 - Zakhar the Robot – technical_</a></li>
+</ul>
+<h2 id=milestones>
+Milestones
+<a class=anchor href=#milestones>#</a>
+</h2>
+<p>There are two types of milestones, with and without demonstration. Demonstrations intended to show important to the project features followed by an article, milestones without demonstrations mainly focused on technical part of the project</p>
+<ol>
+<li>✅ <a href=https://github.com/an-dr/zakhar/releases/tag/reptile_demo>Reptile Demo</a> - implementing of a simple reptile instinct
+<ul>
+<li>Article: <a href=https://blog.agramakov.me/2020/05/29/robot-with-the-conscious/>Robot with the Conscious: Imitating animal behavior for reducing user’s anxiety</a></li>
+</ul>
+</li>
+<li>✅ <a href=https://github.com/an-dr/zakhar/releases/tag/zakharos>Zakharos</a> - moving the core to the <a href=https://www.ros.org/>ROS</a></li>
+<li>🟧 <a href=https://github.com/users/an-dr/projects/3/views/1>ZakharCAN</a> - Replace I2C with CAN bus protocol. Construction and stability improvements.</li>
+<li>⬜ <a href=https://github.com/users/an-dr/projects/4/views/1>Emotions Demo</a> - emotions and reflexes</li>
+<li>⬜ <a href=https://github.com/users/an-dr/projects/5/views/1>ZakhaR.Giskard</a> (Note: R.Giskard is a robot from novels by I.Asimov which could control human&rsquo;s emotions) - Further development of using conditioned and unconditioned responses</li>
+<li>⬜ Animal Demo - showing the robot to users and collecting responses for making conclusions of this iteration</li>
+</ol>
+<h2 id=license>
+License
+<a class=anchor href=#license>#</a>
+</h2>
+<p>This work is licensed under the terms of the GPLv3 license.</p>
+<p>For a copy, see: <a href=LICENSE>LICENSE</a></p>
+<ul>
+<li>site: <a href=https://agramakov.me>https://agramakov.me</a></li>
+<li>e-mail: <a href=mailto:mail@agramakov.me>mail@agramakov.me</a></li>
+</ul>
+<h2 id=support>
+Support
+<a class=anchor href=#support>#</a>
+</h2>
+<p>If you will decide to support me, you can send some pretty words on my email or just use the link</p>
+<p><a href=https://paypal.me/4ndr/1eur><img src=https://img.shields.io/badge/Donate-PayPal-green.svg alt=Donate></a></p>
+<p>Any amount will motivate me to develop the project. Thanks in advance!</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#about>About</a></li>
+<li><a href=#attention-developers-wanted>Attention: DEVELOPERS WANTED</a></li>
+<li><a href=#structure>Structure</a>
+<ul>
+<li><a href=#hardware>Hardware</a></li>
+<li><a href=#repositories>Repositories</a></li>
+</ul>
+</li>
+<li><a href=#internal-standards>Internal standards</a></li>
+<li><a href=#related-articles>Related articles</a></li>
+<li><a href=#milestones>Milestones</a></li>
+<li><a href=#license>License</a></li>
+<li><a href=#support>Support</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
