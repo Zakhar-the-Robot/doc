@@ -5,20 +5,20 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.
 To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.
- Blog (hackaday.io) Facebook Instagram  About #  Assumed: the humans can interact the most effective and seamless with other living creatures
+ Facebook Instagram Blog (hackaday.io)  About #  Assumed: the humans can interact the most effective and seamless with other living creatures
 Suggested: to develop a robot&rsquo;s program structure in the way when basics of its logic are understandable from the robot&rsquo;s behavior.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Main">
 <meta property="og:description" content>
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://zakhar-the-robot.github.io/site/">
+<meta property="og:url" content="https://zakhar-the-robot.github.io/doc/">
 <title>Main | Zakhar the Robot</title>
-<link rel=manifest href=/site/manifest.json>
-<link rel=icon href=/site/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/site/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
-<script defer src=/site/flexsearch.min.js></script>
-<script defer src=/site/en.search.min.070a66440be43f02db88de6f4f185e27e554481b57dba3a92a2bd7fcdbe6b091.js integrity="sha256-BwpmRAvkPwLbiN5vTxheJ+VUSBtX26OpKivX/NvmsJE=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://zakhar-the-robot.github.io/site/index.xml title="Zakhar the Robot">
+<link rel=manifest href=/doc/manifest.json>
+<link rel=icon href=/doc/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/doc/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/doc/flexsearch.min.js></script>
+<script defer src=/doc/en.search.min.fbd1453926e90312a390dd117fb383228f280fbc86fe0b6042a554b9e3d3187a.js integrity="sha256-+9FFOSbpAxKjkN0Rf7ODIo8oD7yG/gtgQqVUuePTGHo=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://zakhar-the-robot.github.io/doc/index.xml title="Zakhar the Robot">
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -28,7 +28,7 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 <div class=book-menu-content>
 <nav>
 <h2 class=book-brand>
-<a class="flex align-center" href=/site/><span>Zakhar the Robot</span>
+<a class="flex align-center" href=/doc/><span>Zakhar the Robot</span>
 </a>
 </h2>
 <div class=book-search>
@@ -38,16 +38,27 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 </div>
 <ul>
 <li>
-<a href=/site/docs/canbus/>Canbus</a>
+<span>Communication Protocols</span>
+<ul>
+<li>
+<a href=/doc/docs/communication-protocols/canbus/>Canbus</a>
 </li>
 <li>
-<a href=/site/docs/devices/>Devices</a>
+<a href=/doc/docs/communication-protocols/deprecated-i2c/>CAN bus</a>
+<ul>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<a href=/site/docs/future/>Future</a>
+<a href=/doc/docs/devices/>WIP: Devices</a>
 </li>
+</ul>
+<ul>
 <li>
-<a href=/site/docs/i2c/>I2c</a>
+<a href=https://github.com/an-dr/zakhar target=_blank rel=noopener>
+↗ Sources
+</a>
 </li>
 </ul>
 </nav>
@@ -58,11 +69,11 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 <header class=book-header>
 <div class="flex align-center justify-between">
 <label for=menu-control>
-<img src=/site/svg/menu.svg class=book-icon alt=Menu>
+<img src=/doc/svg/menu.svg class=book-icon alt=Menu>
 </label>
 <strong>Main</strong>
 <label for=toc-control>
-<img src=/site/svg/toc.svg class=book-icon alt="Table of Contents">
+<img src=/doc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
 </div>
 <aside class="hidden clearfix">
@@ -76,7 +87,6 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 <li><a href=#repositories>Repositories</a></li>
 </ul>
 </li>
-<li><a href=#internal-standards>Internal standards</a></li>
 <li><a href=#related-articles>Related articles</a></li>
 <li><a href=#milestones>Milestones</a></li>
 <li><a href=#license>License</a></li>
@@ -85,13 +95,13 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 </nav>
 </aside>
 </header>
-<article class=markdown><p><img src=logo-light.png alt></p>
+<article class=markdown><img src=logo-light.png width=250>
 <p>Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.</p>
 <p>To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.</p>
 <ul>
-<li><a href=https://hackaday.io/project/171888-zakhar-the-robot>Blog (hackaday.io)</a></li>
-<li><a href=https://www.facebook.com/groups/zakhar>Facebook</a></li>
+<li><a href=https://www.facebook.com/groups/zakhar-the-robot>Facebook</a></li>
 <li><a href=https://www.instagram.com/zakhar_the_robot/>Instagram</a></li>
+<li><a href=https://hackaday.io/project/171888-zakhar-the-robot>Blog (hackaday.io)</a></li>
 </ul>
 <h2 id=about>
 About
@@ -136,7 +146,6 @@ Structure
 Hardware
 <a class=anchor href=#hardware>#</a>
 </h3>
-<p><code>TODO: replace with CAN bus devices</code></p>
 <p>Zakhar consists of 4 devices:</p>
 <ul>
 <li>Brain Platform (<a href=https://github.com/an-dr/zakhar_brain>source</a>)</li>
@@ -144,7 +153,7 @@ Hardware
 <li>Moving Platform (<a href=https://github.com/an-dr/zakhar_platform>source</a>)</li>
 <li>Sensor Platform (<a href=https://github.com/an-dr/zakhar_sensors>source</a>)</li>
 </ul>
-<p>Each platform has it&rsquo;s own battery and can work standalone. It&rsquo;s structures are represented on pictures bellow.</p>
+<p>Each platform has it&rsquo;s own battery and can work standalone.</p>
 <h3 id=repositories>
 Repositories
 <a class=anchor href=#repositories>#</a>
@@ -173,15 +182,6 @@ Repositories
 <li><a href=https://github.com/an-dr/zakhar_kicadlib>zakhar_kicadlib: Library with components for Zakhar project</a></li>
 <li><a href=https://github.com/an-dr/zakhar_proto>zakhar_proto: Repository for experiments and prototyping. Part of the Zakhar project</a></li>
 <li><a href=https://github.com/an-dr/r_giskard>r_giskard: Small project for experiments with unconditioned and conditioned reflexes</a></li>
-</ul>
-<h2 id=internal-standards>
-Internal standards
-<a class=anchor href=#internal-standards>#</a>
-</h2>
-<ul>
-<li><a href=docs/devices.md>I2C devices</a></li>
-<li><a href=docs/i2c.md>ZakharI2C standard</a></li>
-<li><a href=docs/canbus.md>ZakharCAN standard</a></li>
 </ul>
 <h2 id=related-articles>
 Related articles
@@ -233,8 +233,6 @@ Support
 </div>
 <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
 </footer>
-<div class=book-comments>
-</div>
 <label for=menu-control class="hidden book-menu-overlay"></label>
 </div>
 <aside class=book-toc>
@@ -249,7 +247,6 @@ Support
 <li><a href=#repositories>Repositories</a></li>
 </ul>
 </li>
-<li><a href=#internal-standards>Internal standards</a></li>
 <li><a href=#related-articles>Related articles</a></li>
 <li><a href=#milestones>Milestones</a></li>
 <li><a href=#license>License</a></li>

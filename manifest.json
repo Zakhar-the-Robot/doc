@@ -1,14 +1,14 @@
 {
   "name": "Zakhar the Robot",
   "short_name": "Zakhar the Robot",
-  "start_url": "/site/",
-  "scope": "/site/",
+  "start_url": "/doc/",
+  "scope": "/doc/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/site/favicon.svg",
+      "src": "/doc/favicon.svg",
       "sizes": "512x512"
     }
   ]

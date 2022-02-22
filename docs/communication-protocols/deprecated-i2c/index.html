@@ -2,22 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="ZakharI2C #  Back to README
+<meta name=description content="Back to README
 This file describes I2C communication used by Zakhar&rsquo;s systems
 Basic description #   Standard uses 7-bit addressing. Devices can have data located in 0x02&mldr;0xFE registers - 253 bytes Each device mandatorily has registers 0x00 to store command, 0x01 for arguments, and 0x02 to store device state. Commands should be represented by values 0x01&mldr;0xFE Read and write operations are described bellow  Registers #  Minimal register map:">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="ZakharI2C #  Back to README
-This file describes I2C communication used by Zakhar&rsquo;s systems
-Basic description #   Standard uses 7-bit addressing. Devices can have data located in 0x02&mldr;0xFE registers - 253 bytes Each device mandatorily has registers 0x00 to store command, 0x01 for arguments, and 0x02 to store device state. Commands should be represented by values 0x01&mldr;0xFE Read and write operations are described bellow  Registers #  Minimal register map:">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://zakhar-the-robot.github.io/site/docs/i2c/"><meta property="article:section" content="docs">
-<title>I2c | Zakhar the Robot</title>
-<link rel=manifest href=/site/manifest.json>
-<link rel=icon href=/site/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/site/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
-<script defer src=/site/flexsearch.min.js></script>
-<script defer src=/site/en.search.min.070a66440be43f02db88de6f4f185e27e554481b57dba3a92a2bd7fcdbe6b091.js integrity="sha256-BwpmRAvkPwLbiN5vTxheJ+VUSBtX26OpKivX/NvmsJE=" crossorigin=anonymous></script>
+<meta name=color-scheme content="light dark"><meta property="og:title" content="CAN bus">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zakhar-the-robot.github.io/doc/docs/communication-protocols/deprecated-i2c/">
+<title>CAN bus | Zakhar the Robot</title>
+<link rel=manifest href=/doc/manifest.json>
+<link rel=icon href=/doc/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/doc/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/doc/flexsearch.min.js></script>
+<script defer src=/doc/en.search.min.fbd1453926e90312a390dd117fb383228f280fbc86fe0b6042a554b9e3d3187a.js integrity="sha256-+9FFOSbpAxKjkN0Rf7ODIo8oD7yG/gtgQqVUuePTGHo=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://zakhar-the-robot.github.io/doc/docs/communication-protocols/deprecated-i2c/index.xml title="Zakhar the Robot">
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -27,7 +26,7 @@ Basic description #   Standard uses 7-bit addressing. Devices can have data loca
 <div class=book-menu-content>
 <nav>
 <h2 class=book-brand>
-<a class="flex align-center" href=/site/><span>Zakhar the Robot</span>
+<a class="flex align-center" href=/doc/><span>Zakhar the Robot</span>
 </a>
 </h2>
 <div class=book-search>
@@ -37,16 +36,27 @@ Basic description #   Standard uses 7-bit addressing. Devices can have data loca
 </div>
 <ul>
 <li>
-<a href=/site/docs/canbus/>Canbus</a>
+<span>Communication Protocols</span>
+<ul>
+<li>
+<a href=/doc/docs/communication-protocols/canbus/>Canbus</a>
 </li>
 <li>
-<a href=/site/docs/devices/>Devices</a>
+<a href=/doc/docs/communication-protocols/deprecated-i2c/ class=active>CAN bus</a>
+<ul>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<a href=/site/docs/future/>Future</a>
+<a href=/doc/docs/devices/>WIP: Devices</a>
 </li>
+</ul>
+<ul>
 <li>
-<a href=/site/docs/i2c/ class=active>I2c</a>
+<a href=https://github.com/an-dr/zakhar target=_blank rel=noopener>
+↗ Sources
+</a>
 </li>
 </ul>
 </nav>
@@ -57,11 +67,11 @@ Basic description #   Standard uses 7-bit addressing. Devices can have data loca
 <header class=book-header>
 <div class="flex align-center justify-between">
 <label for=menu-control>
-<img src=/site/svg/menu.svg class=book-icon alt=Menu>
+<img src=/doc/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>I2c</strong>
+<strong>CAN bus</strong>
 <label for=toc-control>
-<img src=/site/svg/toc.svg class=book-icon alt="Table of Contents">
+<img src=/doc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
 </div>
 <aside class="hidden clearfix">
@@ -80,11 +90,7 @@ Basic description #   Standard uses 7-bit addressing. Devices can have data loca
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=zakhari2c>
-ZakharI2C
-<a class=anchor href=#zakhari2c>#</a>
-</h1>
-<p><a href=../README.md>Back to README</a></p>
+<article class=markdown><p><a href=../README.md>Back to README</a></p>
 <p>This file describes I2C communication used by Zakhar&rsquo;s systems</p>
 <h2 id=basic-description>
 Basic description
@@ -102,6 +108,7 @@ Registers
 <a class=anchor href=#registers>#</a>
 </h2>
 <p>Minimal register map:</p>
+<img src=Regs.svg width=150>
 <ul>
 <li><code>REG_CMD</code> - Command register. The device is reading commands from here</li>
 <li><code>REG_ARG</code> - Optional argument of the command</li>
@@ -124,6 +131,7 @@ Read/Write operations
 <li>Send Stop state</li>
 </ul>
 <p>Then read one byte - the value from the register</p>
+<img src=Read.svg width=800>
 <p>To write data master should consequently:</p>
 <ul>
 <li>Send Start state</li>
@@ -132,6 +140,7 @@ Read/Write operations
 <li>Send Data byte(s)</li>
 <li>Send Stop state</li>
 </ul>
+<img src=Write.svg width=600>
 <h2 id=command-writing-process>
 Command writing process
 <a class=anchor href=#command-writing-process>#</a>
@@ -147,6 +156,7 @@ Full process
 <li>D) Master writes a command to the <code>REG_CMD</code> (command is any value in the range <code>0x01</code>&mldr;<code>0xFE</code>)</li>
 <li>E) When the command is executed, slave sets CMD and ARG registers to 0x00</li>
 </ul>
+<img src=./Cmd.svg width=500>
 <h3 id=simplified-process>
 Simplified process
 <a class=anchor href=#simplified-process>#</a>
@@ -161,8 +171,6 @@ Simplified process
 </div>
 <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
 </footer>
-<div class=book-comments>
-</div>
 <label for=menu-control class="hidden book-menu-overlay"></label>
 </div>
 <aside class=book-toc>

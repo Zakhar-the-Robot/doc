@@ -2,24 +2,22 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Devices #  Back to README
-The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.
+<meta name=description content="The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.
 Zakhar has three devices connected to the main node:
  The Face Module - responsible for expressions and interaction with the user The Moving Platform - responsible for movement The Sensor Platform - responsible for perception  Each device stores data into registers and interacts with the main node via I2C (i2c conventions used in the project are here)">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content>
-<meta property="og:description" content="Devices #  Back to README
-The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.
+<meta name=color-scheme content="light dark"><meta property="og:title" content="WIP: Devices">
+<meta property="og:description" content="The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.
 Zakhar has three devices connected to the main node:
  The Face Module - responsible for expressions and interaction with the user The Moving Platform - responsible for movement The Sensor Platform - responsible for perception  Each device stores data into registers and interacts with the main node via I2C (i2c conventions used in the project are here)">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zakhar-the-robot.github.io/site/docs/devices/"><meta property="article:section" content="docs">
-<title>Devices | Zakhar the Robot</title>
-<link rel=manifest href=/site/manifest.json>
-<link rel=icon href=/site/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/site/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
-<script defer src=/site/flexsearch.min.js></script>
-<script defer src=/site/en.search.min.070a66440be43f02db88de6f4f185e27e554481b57dba3a92a2bd7fcdbe6b091.js integrity="sha256-BwpmRAvkPwLbiN5vTxheJ+VUSBtX26OpKivX/NvmsJE=" crossorigin=anonymous></script>
+<meta property="og:url" content="https://zakhar-the-robot.github.io/doc/docs/devices/"><meta property="article:section" content="docs">
+<title>WIP: Devices | Zakhar the Robot</title>
+<link rel=manifest href=/doc/manifest.json>
+<link rel=icon href=/doc/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/doc/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/doc/flexsearch.min.js></script>
+<script defer src=/doc/en.search.min.fbd1453926e90312a390dd117fb383228f280fbc86fe0b6042a554b9e3d3187a.js integrity="sha256-+9FFOSbpAxKjkN0Rf7ODIo8oD7yG/gtgQqVUuePTGHo=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -29,7 +27,7 @@ Zakhar has three devices connected to the main node:
 <div class=book-menu-content>
 <nav>
 <h2 class=book-brand>
-<a class="flex align-center" href=/site/><span>Zakhar the Robot</span>
+<a class="flex align-center" href=/doc/><span>Zakhar the Robot</span>
 </a>
 </h2>
 <div class=book-search>
@@ -39,16 +37,27 @@ Zakhar has three devices connected to the main node:
 </div>
 <ul>
 <li>
-<a href=/site/docs/canbus/>Canbus</a>
+<span>Communication Protocols</span>
+<ul>
+<li>
+<a href=/doc/docs/communication-protocols/canbus/>Canbus</a>
 </li>
 <li>
-<a href=/site/docs/devices/ class=active>Devices</a>
+<a href=/doc/docs/communication-protocols/deprecated-i2c/>CAN bus</a>
+<ul>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<a href=/site/docs/future/>Future</a>
+<a href=/doc/docs/devices/ class=active>WIP: Devices</a>
 </li>
+</ul>
+<ul>
 <li>
-<a href=/site/docs/i2c/>I2c</a>
+<a href=https://github.com/an-dr/zakhar target=_blank rel=noopener>
+↗ Sources
+</a>
 </li>
 </ul>
 </nav>
@@ -59,11 +68,11 @@ Zakhar has three devices connected to the main node:
 <header class=book-header>
 <div class="flex align-center justify-between">
 <label for=menu-control>
-<img src=/site/svg/menu.svg class=book-icon alt=Menu>
+<img src=/doc/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>Devices</strong>
+<strong>WIP: Devices</strong>
 <label for=toc-control>
-<img src=/site/svg/toc.svg class=book-icon alt="Table of Contents">
+<img src=/doc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
 </div>
 <aside class="hidden clearfix">
@@ -94,12 +103,7 @@ Zakhar has three devices connected to the main node:
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=devices>
-Devices
-<a class=anchor href=#devices>#</a>
-</h1>
-<p><a href=../README.md>Back to README</a></p>
-<p>The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.</p>
+<article class=markdown><p>The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.</p>
 <p>Zakhar has three devices connected to the main node:</p>
 <ul>
 <li>The Face Module - responsible for expressions and interaction with the user</li>
@@ -430,8 +434,6 @@ SP: Source code
 </div>
 <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
 </footer>
-<div class=book-comments>
-</div>
 <label for=menu-control class="hidden book-menu-overlay"></label>
 </div>
 <aside class=book-toc>
