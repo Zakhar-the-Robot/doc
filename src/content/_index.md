@@ -12,6 +12,8 @@ To achieve this the robot uses life concepts for its program architecture: insti
 - [Instagram](https://www.instagram.com/zakhar_the_robot/)
 - [Blog (hackaday.io)](https://hackaday.io/project/171888-zakhar-the-robot)
 <!-- - [Project's how-to on hackster.io (WIP)](https://www.hackster.io/an-dr/zakhar-the-robot-0d8744) -->
+
+- [Sources: doc](https://github.com/zakhar-the-robot/doc/)
 ## About
 
 **Assumed**: the humans can interact the most effective and seamless with other living creatures
