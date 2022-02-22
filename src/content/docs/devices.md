@@ -1,6 +1,6 @@
-# Devices
-
-[Back to README](../README.md)
+---
+title: "WIP: Devices"
+---
 
 The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.
 

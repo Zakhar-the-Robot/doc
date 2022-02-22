@@ -8,3 +8,10 @@ licenseLink: https://www.gnu.org/licenses/gpl-3.0.en.html
 author: Andrei Gramakov
 toc: true # Enable Table of Contents
 pager: true # Show pager navigation (prev/next links) at the bottom of pages if true
+
+# Theme config
+# BookLogo: logo-light.png
+BookSection: docs
+BookRepo: https://zakhar-the-robot.github.io/doc/
+BookDateFormat: " 2006-Jan-02"
+BookComments: false

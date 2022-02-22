@@ -2,22 +2,17 @@
 title: Main
 ---
 
+<img src="logo-light.png" width="250"/>
 
-
-![](logo-light.png)
-
-
-Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot. 
+Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.
 
 To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.
 
-- [Blog (hackaday.io)](https://hackaday.io/project/171888-zakhar-the-robot)
-- [Facebook](https://www.facebook.com/groups/zakhar)
+- [Facebook](https://www.facebook.com/groups/zakhar-the-robot)
 - [Instagram](https://www.instagram.com/zakhar_the_robot/)
+- [Blog (hackaday.io)](https://hackaday.io/project/171888-zakhar-the-robot)
 <!-- - [Project's how-to on hackster.io (WIP)](https://www.hackster.io/an-dr/zakhar-the-robot-0d8744) -->
 ## About
-
-
 
 **Assumed**: the humans can interact the most effective and seamless with other living creatures
 
@@ -59,8 +54,6 @@ Please look at the [list of repositories](#repositories) and non-green [mileston
 
 ### Hardware
 
-`TODO: replace with CAN bus devices`
-
 Zakhar consists of 4 devices:
 
 - Brain Platform ([source](https://github.com/an-dr/zakhar_brain))
@@ -68,17 +61,7 @@ Zakhar consists of 4 devices:
 - Moving Platform ([source](https://github.com/an-dr/zakhar_platform))
 - Sensor Platform ([source](https://github.com/an-dr/zakhar_sensors))
 
-Each platform has it's own battery and can work standalone. It's structures are represented on pictures bellow.
-
-<img src="assets/device_network/zakhar.svg" width="700">
-
-<img src="assets/device_network/brain_platform.svg" width="700">
-
-<img src="assets/device_network/moving_platform.svg" width="700">
-
-<img src="assets/device_network/face_module.svg" width="700">
-
-<img src="assets/device_network/sensor_platform.svg" width="700">
+Each platform has it's own battery and can work standalone.
 
 
 ### Repositories
@@ -101,12 +84,6 @@ Other related repositories:
 - [zakhar_kicadlib: Library with components for Zakhar project](https://github.com/an-dr/zakhar_kicadlib)
 - [zakhar_proto: Repository for experiments and prototyping. Part of the Zakhar project](https://github.com/an-dr/zakhar_proto)
 - [r_giskard: Small project for experiments with unconditioned and conditioned reflexes](https://github.com/an-dr/r_giskard)
-
-## Internal standards
-
-- [I2C devices](docs/devices.md)
-- [ZakharI2C standard](docs/i2c.md)
-- [ZakharCAN standard](docs/canbus.md)
 
 ## Related articles
 
@@ -143,5 +120,3 @@ If you will decide to support me, you can send some pretty words on my email or 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/4ndr/1eur)
 
 Any amount will motivate me to develop the project. Thanks in advance!
-
-

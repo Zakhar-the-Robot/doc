@@ -1,7 +1,13 @@
-baseURL: 'https://zakhar-the-robot.github.io/site/'
+baseURL: 'https://zakhar-the-robot.github.io/doc/'
 languageCode: 'en-us'
 title: 'Zakhar the Robot'
 theme: "hugo-book"
 
 showLicense: true # Enable or disable license for all post
 showToc: true # Enable or disable ToC for all post
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    
