@@ -4,6 +4,7 @@ title: 'Zakhar the Robot'
 theme: "hugo-book"
 
 showLicense: true # Enable or disable license for all post
+enableGitInfo: true
 showToc: true # Enable or disable ToC for all post
 
 markup:
