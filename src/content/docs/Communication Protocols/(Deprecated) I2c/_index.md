@@ -1,9 +1,6 @@
----
-title: CAN bus
-thumbnail: Regs.svg
----
 
-[Back to README](../README.md)
+
+
 
 This file describes I2C communication used by Zakhar's systems
 
