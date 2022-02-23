@@ -2,20 +2,20 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Back to README
-This file describes I2C communication used by Zakhar&rsquo;s systems
-Basic description #   Standard uses 7-bit addressing. Devices can have data located in 0x02&mldr;0xFE registers - 253 bytes Each device mandatorily has registers 0x00 to store command, 0x01 for arguments, and 0x02 to store device state. Commands should be represented by values 0x01&mldr;0xFE Read and write operations are described bellow  Registers #  Minimal register map:">
+<meta name=description content="This file describes I2C communication used by Zakhar&rsquo;s systems
+Basic description #   Standard uses 7-bit addressing. Devices can have data located in 0x02&mldr;0xFE registers - 253 bytes Each device mandatorily has registers 0x00 to store command, 0x01 for arguments, and 0x02 to store device state. Commands should be represented by values 0x01&mldr;0xFE Read and write operations are described bellow  Registers #  Minimal register map:
+ REG_CMD - Command register.">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="CAN bus">
+<meta name=color-scheme content="light dark"><meta property="og:title" content>
 <meta property="og:description" content>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://zakhar-the-robot.github.io/doc/docs/communication-protocols/deprecated-i2c/">
-<title>CAN bus | Zakhar the Robot</title>
+<title>( Deprecated) I2c | Zakhar the Robot</title>
 <link rel=manifest href=/doc/manifest.json>
 <link rel=icon href=/doc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/doc/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
 <script defer src=/doc/flexsearch.min.js></script>
-<script defer src=/doc/en.search.min.fbd1453926e90312a390dd117fb383228f280fbc86fe0b6042a554b9e3d3187a.js integrity="sha256-+9FFOSbpAxKjkN0Rf7ODIo8oD7yG/gtgQqVUuePTGHo=" crossorigin=anonymous></script>
+<script defer src=/doc/en.search.min.37d85496af3a12e72b0c8d2a1ddc5bac1500a3ede039aa1f72fbeccc5ff3d3e0.js integrity="sha256-N9hUlq86EucrDI0qHdxbrBUAo+3gOaofcvvszF/z0+A=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://zakhar-the-robot.github.io/doc/docs/communication-protocols/deprecated-i2c/index.xml title="Zakhar the Robot">
 </head>
 <body dir=ltr>
@@ -39,12 +39,12 @@ Basic description #   Standard uses 7-bit addressing. Devices can have data loca
 <span>Communication Protocols</span>
 <ul>
 <li>
-<a href=/doc/docs/communication-protocols/canbus/>Canbus</a>
-</li>
-<li>
-<a href=/doc/docs/communication-protocols/deprecated-i2c/ class=active>CAN bus</a>
+<a href=/doc/docs/communication-protocols/deprecated-i2c/ class=active>( Deprecated) I2c</a>
 <ul>
 </ul>
+</li>
+<li>
+<a href=/doc/docs/communication-protocols/canbus/>Canbus</a>
 </li>
 </ul>
 </li>
@@ -69,7 +69,7 @@ Basic description #   Standard uses 7-bit addressing. Devices can have data loca
 <label for=menu-control>
 <img src=/doc/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>CAN bus</strong>
+<strong>( Deprecated) I2c</strong>
 <label for=toc-control>
 <img src=/doc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -90,8 +90,7 @@ Basic description #   Standard uses 7-bit addressing. Devices can have data loca
 </nav>
 </aside>
 </header>
-<article class=markdown><p><a href=../README.md>Back to README</a></p>
-<p>This file describes I2C communication used by Zakhar&rsquo;s systems</p>
+<article class=markdown><p>This file describes I2C communication used by Zakhar&rsquo;s systems</p>
 <h2 id=basic-description>
 Basic description
 <a class=anchor href=#basic-description>#</a>
@@ -168,9 +167,9 @@ Simplified process
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://zakhar-the-robot.github.io/doc//commit/fa3c47d92ec8ae86ba4eb22227cdd1d7e3a1f02a title="Last modified by Andrei Gramakov |  2022-Feb-22" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://zakhar-the-robot.github.io/doc//commit/2536aae610019545ffc904c76395d9c963c33a10 title="Last modified by Andrei Gramakov |  2022-Feb-23" target=_blank rel=noopener>
 <img src=/doc/svg/calendar.svg class=book-icon alt=Calendar>
-<span> 2022-Feb-22</span>
+<span> 2022-Feb-23</span>
 </a>
 </div>
 </div>
