@@ -1,5 +1,5 @@
 ---
-title: "WIP: Devices"
+title: "Devices (Work in Progress)"
 ---
 
 The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.
