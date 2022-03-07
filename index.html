@@ -5,7 +5,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.
 To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.
- Facebook Instagram Blog (hackaday.io)   Sources: doc  About #  Assumed: the humans can interact the most effective and seamless with other living creatures
+ Facebook Instagram Blog (hackaday.io)  About #  Assumed: the humans can interact the most effective and seamless with other living creatures
 Suggested: to develop a robot&rsquo;s program structure in the way when basics of its logic are understandable from the robot&rsquo;s behavior.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Main">
@@ -17,7 +17,7 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 <link rel=icon href=/doc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/doc/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
 <script defer src=/doc/flexsearch.min.js></script>
-<script defer src=/doc/en.search.min.37d85496af3a12e72b0c8d2a1ddc5bac1500a3ede039aa1f72fbeccc5ff3d3e0.js integrity="sha256-N9hUlq86EucrDI0qHdxbrBUAo+3gOaofcvvszF/z0+A=" crossorigin=anonymous></script>
+<script defer src=/doc/en.search.min.ac12d1302ca4f79d367c4b44d87215f3defd5cf037747e90dde6db56a95cf0f6.js integrity="sha256-rBLRMCyk9502fEtE2HIV8979XPA3dH6Q3ebbVqlc8PY=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://zakhar-the-robot.github.io/doc/index.xml title="Zakhar the Robot">
 </head>
 <body dir=ltr>
@@ -41,23 +41,46 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 <span>Communication Protocols</span>
 <ul>
 <li>
-<a href=/doc/docs/communication-protocols/deprecated-i2c/>( Deprecated) I2c</a>
-<ul>
-</ul>
-</li>
-<li>
 <a href=/doc/docs/communication-protocols/canbus/>Canbus</a>
 </li>
+<li>
+<a href=/doc/docs/communication-protocols/i2c-deprecated/>I2c ( Deprecated)</a>
+<ul>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<a href=/doc/docs/devices/>WIP: Devices</a>
+<span>Gears</span>
+<ul>
+<li>
+<a href=/doc/docs/gears/brain/>Brain</a>
+<ul>
+<li>
+<a href=/doc/docs/gears/brain/ros_install/>Ros Install</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc/docs/gears/io/>IO</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/doc/docs/gears/motors/>Motors</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc/docs/devices/>Devices (Work in Progress)</a>
 </li>
 </ul>
 <ul>
 <li>
-<a href=https://github.com/an-dr/zakhar target=_blank rel=noopener>
-↗ Sources
+<a href=https://github.com/Zakhar-the-Robot/zakhar target=_blank rel=noopener>
+Sources ↗
 </a>
 </li>
 </ul>
@@ -80,7 +103,6 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 <nav id=TableOfContents>
 <ul>
 <li><a href=#about>About</a></li>
-<li><a href=#attention-developers-wanted>Attention: DEVELOPERS WANTED</a></li>
 <li><a href=#structure>Structure</a>
 <ul>
 <li><a href=#hardware>Hardware</a></li>
@@ -89,6 +111,7 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 </li>
 <li><a href=#related-articles>Related articles</a></li>
 <li><a href=#milestones>Milestones</a></li>
+<li><a href=#attention-developers-wanted>Attention: DEVELOPERS WANTED</a></li>
 <li><a href=#license>License</a></li>
 <li><a href=#support>Support</a></li>
 </ul>
@@ -102,9 +125,6 @@ Suggested: to develop a robot&rsquo;s program structure in the way when basics o
 <li><a href=https://www.facebook.com/groups/zakhar-the-robot>Facebook</a></li>
 <li><a href=https://www.instagram.com/zakhar_the_robot/>Instagram</a></li>
 <li><a href=https://hackaday.io/project/171888-zakhar-the-robot>Blog (hackaday.io)</a></li>
-</ul>
-<ul>
-<li><a href=https://github.com/zakhar-the-robot/doc/>Sources: doc</a></li>
 </ul>
 <h2 id=about>
 About
@@ -125,22 +145,6 @@ About
 <ul>
 <li><a href=https://blog.agramakov.me/posts/2020-05-29-robot-with-the-conscious/>&ldquo;Robot with the Conscious: Imitating animal behavior for reducing user&rsquo;s anxiety&rdquo;</a></li>
 </ul>
-<h2 id=attention-developers-wanted>
-Attention: DEVELOPERS WANTED
-<a class=anchor href=#attention-developers-wanted>#</a>
-</h2>
-<p>The project is ambitious, and I cannot move it that fast as I want to. If you are as interested in robotics as I am, let&rsquo;s try to work together. I&rsquo;m confident that we will develop something unique.</p>
-<p>The project covers many different areas and programming languages, including:</p>
-<ul>
-<li>3D modeling (for simulation)</li>
-<li>3D printing (for the robot itself)</li>
-<li>C / C ++ development (embedded: Arduino, ESP32, STM32; hi-level: Linux, Robot Operating System - ROS)</li>
-<li>Computer vision (image recognition, especially for indoor navigation)</li>
-<li>Hardware design (robot modules)</li>
-<li>Python development (Robot Operating System - ROS)</li>
-</ul>
-<p>Please look at the <a href=#repositories>list of repositories</a> and non-green <a href=#milestones>milestones</a> below, see the issues, and take something if you want. If you want to participate but do not know where to start, create an issue in this repository, and we will figure this out.</p>
-<p><strong>Any volunteer participation will be appreciated!</strong></p>
 <h2 id=structure>
 Structure
 <a class=anchor href=#structure>#</a>
@@ -151,32 +155,32 @@ Hardware
 </h3>
 <p>Zakhar consists of 4 devices:</p>
 <ul>
-<li>Brain Platform (<a href=https://github.com/an-dr/zakhar_brain>source</a>)</li>
+<li>Brain Platform (<a href=https://github.com/Zakhar-the-Robot/brain>source</a>)</li>
 <li>Face Module (<a href=https://github.com/an-dr/zakhar-face-module>source</a>)</li>
-<li>Moving Platform (<a href=https://github.com/an-dr/zakhar_platform>source</a>)</li>
-<li>Sensor Platform (<a href=https://github.com/an-dr/zakhar_sensors>source</a>)</li>
+<li>Moving Platform (<a href=https://github.com/Zakhar-the-Robot/motors>source</a>)</li>
+<li>Sensor Platform (<a href=https://github.com/Zakhar-the-Robot/sensors>source</a>)</li>
 </ul>
 <p>Each platform has it&rsquo;s own battery and can work standalone.</p>
 <h3 id=repositories>
 Repositories
 <a class=anchor href=#repositories>#</a>
 </h3>
-<p>The hugest parts of the project called gears. Currently there are 3 gears that divided into smaller parts:</p>
+<p>The hugest parts of the project called Gears. Currently there are 3 gears that divided into smaller parts:</p>
 <ul>
-<li><a href=https://github.com/an-dr/zakhar_io>zakhar_io</a> - interaction
+<li><a href=https://github.com/Zakhar-the-Robot/io>io</a> - interaction
 <ul>
 <li><a href=https://github.com/an-dr/zakhar-face-module>zakhar-face-module: Zakhar&rsquo;s part which is responsible for facial expressions</a></li>
-<li><a href=https://github.com/an-dr/zakhar_sensors>zakhar_sensors: Sensors implementation for the Zakhar Project</a></li>
+<li><a href=https://github.com/Zakhar-the-Robot/sensors>sensors: Sensors implementation for the Zakhar Project</a></li>
 </ul>
 </li>
-<li><a href=https://github.com/an-dr/zakhar_brain>zakhar_brain</a> - thinking
+<li><a href=https://github.com/Zakhar-the-Robot/brain>brain</a> - thinking
 <ul>
 <li><a href=https://github.com/an-dr/zakharos_core>zakharos_core: Software core (ROS-based) for the Zakhar project</a></li>
 <li><a href=https://github.com/an-dr/zakhar_pycore>zakhar_pycore: Base python package for the Zakhar project</a></li>
 <li><a href=https://github.com/an-dr/zakhar_service>zakhar_service: Software for service purposes</a></li>
 </ul>
 </li>
-<li><a href=https://github.com/an-dr/zakhar_platform>zakhar_platform</a> - moving (ESP32-powered motorized platform)</li>
+<li><a href=https://github.com/Zakhar-the-Robot/motors>motors</a> - moving (ESP32-powered motorized platform)</li>
 </ul>
 <p>Other related repositories:</p>
 <ul>
@@ -213,6 +217,22 @@ Milestones
 <li>⬜ <a href=https://github.com/users/an-dr/projects/5/views/1>ZakhaR.Giskard</a> (Note: R.Giskard is a robot from novels by I.Asimov which could control human&rsquo;s emotions) - Further development of using conditioned and unconditioned responses</li>
 <li>⬜ Animal Demo - showing the robot to users and collecting responses for making conclusions of this iteration</li>
 </ol>
+<h2 id=attention-developers-wanted>
+Attention: DEVELOPERS WANTED
+<a class=anchor href=#attention-developers-wanted>#</a>
+</h2>
+<p>The project is ambitious, and I cannot move it that fast as I want to. If you are as interested in robotics as I am, let&rsquo;s try to work together. I&rsquo;m confident that we will develop something unique.</p>
+<p>The project covers many different areas and programming languages, including:</p>
+<ul>
+<li>3D modeling (for simulation)</li>
+<li>3D printing (for the robot itself)</li>
+<li>C / C ++ development (embedded: Arduino, ESP32, STM32; hi-level: Linux, Robot Operating System - ROS)</li>
+<li>Computer vision (image recognition, especially for indoor navigation)</li>
+<li>Hardware design (robot modules)</li>
+<li>Python development (Robot Operating System - ROS)</li>
+</ul>
+<p>Please look at the <a href=#repositories>list of repositories</a> and non-green <a href=#milestones>milestones</a> below, see the issues, and take something if you want. If you want to participate but do not know where to start, create an issue in this repository, and we will figure this out.</p>
+<p><strong>Any volunteer participation will be appreciated!</strong></p>
 <h2 id=license>
 License
 <a class=anchor href=#license>#</a>
@@ -230,12 +250,14 @@ Support
 <p>If you will decide to support me, you can send some pretty words on my email or just use the link</p>
 <p><a href=https://paypal.me/4ndr/1eur><img src=https://img.shields.io/badge/Donate-PayPal-green.svg alt=Donate></a></p>
 <p>Any amount will motivate me to develop the project. Thanks in advance!</p>
+<hr>
+<p><a href=https://github.com/zakhar-the-robot/doc/>Documentation Sources</a></p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://zakhar-the-robot.github.io/doc//commit/2536aae610019545ffc904c76395d9c963c33a10 title="Last modified by Andrei Gramakov |  2022-Feb-23" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://zakhar-the-robot.github.io/doc//commit/f8f08edfa21f8b6e365c83864d52216059ec8561 title="Last modified by Andrei Gramakov |  2022-Mar-07" target=_blank rel=noopener>
 <img src=/doc/svg/calendar.svg class=book-icon alt=Calendar>
-<span> 2022-Feb-23</span>
+<span> 2022-Mar-07</span>
 </a>
 </div>
 </div>
@@ -248,7 +270,6 @@ Support
 <nav id=TableOfContents>
 <ul>
 <li><a href=#about>About</a></li>
-<li><a href=#attention-developers-wanted>Attention: DEVELOPERS WANTED</a></li>
 <li><a href=#structure>Structure</a>
 <ul>
 <li><a href=#hardware>Hardware</a></li>
@@ -257,6 +278,7 @@ Support
 </li>
 <li><a href=#related-articles>Related articles</a></li>
 <li><a href=#milestones>Milestones</a></li>
+<li><a href=#attention-developers-wanted>Attention: DEVELOPERS WANTED</a></li>
 <li><a href=#license>License</a></li>
 <li><a href=#support>Support</a></li>
 </ul>

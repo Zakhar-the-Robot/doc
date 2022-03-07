@@ -6,19 +6,19 @@
 Zakhar has three devices connected to the main node:
  The Face Module - responsible for expressions and interaction with the user The Moving Platform - responsible for movement The Sensor Platform - responsible for perception  Each device stores data into registers and interacts with the main node via I2C (i2c conventions used in the project are here)">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="WIP: Devices">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Devices (Work in Progress)">
 <meta property="og:description" content="The main node - it is the node containing main operational program if the robot. Currently it is Raspberry Pi 4.
 Zakhar has three devices connected to the main node:
  The Face Module - responsible for expressions and interaction with the user The Moving Platform - responsible for movement The Sensor Platform - responsible for perception  Each device stores data into registers and interacts with the main node via I2C (i2c conventions used in the project are here)">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zakhar-the-robot.github.io/doc/docs/devices/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-23T08:47:59+01:00">
-<title>WIP: Devices | Zakhar the Robot</title>
+<meta property="article:modified_time" content="2022-03-07T22:09:33+01:00">
+<title>Devices (Work in Progress) | Zakhar the Robot</title>
 <link rel=manifest href=/doc/manifest.json>
 <link rel=icon href=/doc/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/doc/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
 <script defer src=/doc/flexsearch.min.js></script>
-<script defer src=/doc/en.search.min.37d85496af3a12e72b0c8d2a1ddc5bac1500a3ede039aa1f72fbeccc5ff3d3e0.js integrity="sha256-N9hUlq86EucrDI0qHdxbrBUAo+3gOaofcvvszF/z0+A=" crossorigin=anonymous></script>
+<script defer src=/doc/en.search.min.ac12d1302ca4f79d367c4b44d87215f3defd5cf037747e90dde6db56a95cf0f6.js integrity="sha256-rBLRMCyk9502fEtE2HIV8979XPA3dH6Q3ebbVqlc8PY=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -41,23 +41,46 @@ Zakhar has three devices connected to the main node:
 <span>Communication Protocols</span>
 <ul>
 <li>
-<a href=/doc/docs/communication-protocols/deprecated-i2c/>( Deprecated) I2c</a>
-<ul>
-</ul>
-</li>
-<li>
 <a href=/doc/docs/communication-protocols/canbus/>Canbus</a>
 </li>
+<li>
+<a href=/doc/docs/communication-protocols/i2c-deprecated/>I2c ( Deprecated)</a>
+<ul>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<a href=/doc/docs/devices/ class=active>WIP: Devices</a>
+<span>Gears</span>
+<ul>
+<li>
+<a href=/doc/docs/gears/brain/>Brain</a>
+<ul>
+<li>
+<a href=/doc/docs/gears/brain/ros_install/>Ros Install</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc/docs/gears/io/>IO</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/doc/docs/gears/motors/>Motors</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc/docs/devices/ class=active>Devices (Work in Progress)</a>
 </li>
 </ul>
 <ul>
 <li>
-<a href=https://github.com/an-dr/zakhar target=_blank rel=noopener>
-↗ Sources
+<a href=https://github.com/Zakhar-the-Robot/zakhar target=_blank rel=noopener>
+Sources ↗
 </a>
 </li>
 </ul>
@@ -71,7 +94,7 @@ Zakhar has three devices connected to the main node:
 <label for=menu-control>
 <img src=/doc/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>WIP: Devices</strong>
+<strong>Devices (Work in Progress)</strong>
 <label for=toc-control>
 <img src=/doc/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -432,9 +455,9 @@ SP: Source code
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://zakhar-the-robot.github.io/doc//commit/2536aae610019545ffc904c76395d9c963c33a10 title="Last modified by Andrei Gramakov |  2022-Feb-23" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://zakhar-the-robot.github.io/doc//commit/f8f08edfa21f8b6e365c83864d52216059ec8561 title="Last modified by Andrei Gramakov |  2022-Mar-07" target=_blank rel=noopener>
 <img src=/doc/svg/calendar.svg class=book-icon alt=Calendar>
-<span> 2022-Feb-23</span>
+<span> 2022-Mar-07</span>
 </a>
 </div>
 </div>
