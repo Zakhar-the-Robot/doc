@@ -8,10 +8,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 📥 Git checkout
+      - name: ⬇️ Git checkout
         uses: actions/checkout@v2
         with:
           submodules: true
+          
+      - name: ⬇️ Download Docs
+        run: |
+          ${{ github.workspace }}/script/download_docs.ps1
+        shell: pwsh  
         
       - name: 📰 Publish Site
         uses: chabad360/hugo-gh-pages@master

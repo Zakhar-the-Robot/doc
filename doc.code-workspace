@@ -18,6 +18,17 @@
                     "cwd": "${workspaceFolder}/src",
                 }
             },
+            {
+                "label": "Download Docs",
+                "type": "shell",
+                "command": "pwsh",
+                "args": [
+                    "script/download_docs.ps1",
+                    ],
+                "options": {
+                    "cwd": "${workspaceFolder}",
+                }
+            },
         ]
     },
     "settings": {}
