@@ -14,8 +14,8 @@
 
 "[  Start  ]"
 ""
-Download-Documentation "https://github.com/Zakhar-the-Robot/brain.git"  "Gears/Brain"
-Download-Documentation "https://github.com/Zakhar-the-Robot/io.git"     "Gears/IO"
-Download-Documentation "https://github.com/Zakhar-the-Robot/motors.git" "Gears/Motors"
+Download-Documentation "https://github.com/Zakhar-the-Robot/brain.git"  "Units/Brain"
+Download-Documentation "https://github.com/Zakhar-the-Robot/io.git"     "Units/IO"
+Download-Documentation "https://github.com/Zakhar-the-Robot/motors.git" "Units/Motors"
 Add-Version -Minor
 "[  Done   ]"
