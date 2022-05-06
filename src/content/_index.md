@@ -45,10 +45,9 @@ Zakhar consists of 4 devices:
 
 Each platform has it's own battery and can work standalone.
 
-
 ### Repositories
 
-The hugest parts of the project called Gears. Currently there are 3 gears that divided into smaller parts:
+The hugest parts of the project are called Units. Currently there are 3 units that divided into smaller parts:
 
 - [io](https://github.com/Zakhar-the-Robot/io) - interaction
     - [zakhar-face-module: Zakhar's part which is responsible for facial expressions](https://github.com/an-dr/zakhar-face-module)
