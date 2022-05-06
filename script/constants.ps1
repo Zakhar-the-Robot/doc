@@ -10,12 +10,6 @@
 #
 # *************************************************************************
 
-. $PSScriptRoot/functions.ps1
-
-"[  Start  ]"
-""
-Download-Documentation "https://github.com/Zakhar-the-Robot/brain.git"  "Gears/Brain"
-Download-Documentation "https://github.com/Zakhar-the-Robot/io.git"     "Gears/IO"
-Download-Documentation "https://github.com/Zakhar-the-Robot/motors.git" "Gears/Motors"
-Add-Version -Minor
-"[  Done   ]"
+$RepoRootDir = Resolve-Path -Path "$PSScriptRoot/.."
+$DocsDir = Resolve-Path -Path "$RepoRootDir/src/content/docs"
+$VersionFile = Get-Item "$RepoRootDir/VERSION"
