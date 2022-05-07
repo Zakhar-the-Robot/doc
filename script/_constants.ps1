@@ -13,3 +13,6 @@
 $RepoRootDir = Resolve-Path -Path "$PSScriptRoot/.."
 $DocsDir = Resolve-Path -Path "$RepoRootDir/src/content/docs"
 $VersionFile = Get-Item "$RepoRootDir/VERSION"
+
+# "RepoRootDir: $RepoRootDir"
+# "DocsDir: $DocsDir"
