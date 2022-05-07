@@ -10,12 +10,15 @@
 #
 # *************************************************************************
 
-. $PSScriptRoot/functions.ps1
+. $PSScriptRoot/_functions.ps1
+. $PSScriptRoot/_external_docs.ps1
 
 "[  Start  ]"
 ""
-Download-Documentation "https://github.com/Zakhar-the-Robot/brain.git"  "Units/Brain"
-Download-Documentation "https://github.com/Zakhar-the-Robot/io.git"     "Units/IO"
-Download-Documentation "https://github.com/Zakhar-the-Robot/motors.git" "Units/Motors"
+
+foreach ($d in $DocList) {
+    Download-Documentation $d.SrcRepo $d.DestDirectory
+}
+
 Add-Version -Minor
 "[  Done   ]"

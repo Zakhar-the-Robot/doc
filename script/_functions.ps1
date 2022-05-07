@@ -10,7 +10,7 @@
 #
 # *************************************************************************
 
-. $PSScriptRoot/constants.ps1
+. $PSScriptRoot/_constants.ps1
 
 function Get-Version {
     $v = "$(Get-Content $VersionFile)".split('\n')[0].split(".")
@@ -56,7 +56,7 @@ function Download-Documentation ($Repository, $RelativeToDocsDestination) {
     $DestDir = "$DocsDir/$RelativeToDocsDestination"
     
     "- Clean an old directory"
-    Remove-Item -Force -Recurse $DestDir
+    Remove-Item -Force -Recurse $DestDir -ErrorAction SilentlyContinue
     
     "- Downloading $Repository/main/doc -> $RelativeToDocsDestination ..."
     Export-SvnDirectory $Repository "doc" "$DestDir"

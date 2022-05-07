@@ -34,37 +34,26 @@ An article with detailed explanations and a demonstration:
 - ["Robot with the Conscious: Imitating animal behavior for reducing user's anxiety"](https://blog.agramakov.me/posts/2020-05-29-robot-with-the-conscious/)
 ## Structure
 
-### Hardware
+Zakhar consists of 3 systems:
 
-Zakhar consists of 4 devices:
+- Brain
+- IO
+- Motion
 
-- Brain Platform ([source](https://github.com/Zakhar-the-Robot/brain))
-- Face Module ([source](https://github.com/an-dr/zakhar-face-module))
-- Moving Platform ([source](https://github.com/Zakhar-the-Robot/motors))
-- Sensor Platform ([source](https://github.com/Zakhar-the-Robot/sensors))
+Each system consists of units - standalone devices capable of working into a common communication network. Each unit is a part of some system. Zakhar consists of 4 units:
 
-Each platform has it's own battery and can work standalone.
-
-### Repositories
-
-The hugest parts of the project are called Units. Currently there are 3 units that divided into smaller parts:
-
-- [io](https://github.com/Zakhar-the-Robot/io) - interaction
-    - [zakhar-face-module: Zakhar's part which is responsible for facial expressions](https://github.com/an-dr/zakhar-face-module)
-    - [sensors: Sensors implementation for the Zakhar Project](https://github.com/Zakhar-the-Robot/sensors)
-- [brain](https://github.com/Zakhar-the-Robot/brain) - thinking
-    - [zakharos_core: Software core (ROS-based) for the Zakhar project](https://github.com/an-dr/zakharos_core)
-    - [zakhar_pycore: Base python package for the Zakhar project](https://github.com/an-dr/zakhar_pycore)
-    - [zakhar_service: Software for service purposes](https://github.com/an-dr/zakhar_service)
-- [motors](https://github.com/Zakhar-the-Robot/motors) - moving (ESP32-powered motorized platform)
-
-Other related repositories:
-
-- [zakhar_docker: Docker files with Zakhar environment](https://github.com/an-dr/zakhar_docker)
-- [zakhar_faces: Zakhar's facial expressions](https://github.com/an-dr/zakhar_faces)
-- [zakhar_kicadlib: Library with components for Zakhar project](https://github.com/an-dr/zakhar_kicadlib)
-- [zakhar_proto: Repository for experiments and prototyping. Part of the Zakhar project](https://github.com/an-dr/zakhar_proto)
-- [r_giskard: Small project for experiments with unconditioned and conditioned reflexes](https://github.com/an-dr/r_giskard)
+- Brain Unit: Brain System
+[![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/Brain" >}} "Go to Documentation")
+[![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/brain "Go to Repository")
+- Face Unit: IO System
+[![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO" >}} "Go to Documentation")
+[![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/io_face "Go to Repository")
+- Wheeled Platform Unit: Motion System
+[![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/Motion/Wheeled Platform" >}} "Go to Documentation")
+[![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/motion_wheels "Go to Repository")
+- Sensor Unit: IO System
+[![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO" >}} "Go to Documentation")
+[![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/io_sensors "Go to Repository")
 
 ## Related articles
 
