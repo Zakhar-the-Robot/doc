@@ -26,7 +26,6 @@ Example of the device id 0x104:
 - Device Address: 0x1
 - Data ID: 0x4
 
-
 ## Standard Versioning
 
 Note: **Until version 1.0.0 this section can be violated**

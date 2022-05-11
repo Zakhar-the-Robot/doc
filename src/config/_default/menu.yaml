@@ -1,7 +1,12 @@
   before: []
 
+
   after:
-    - name: "Sources ↗"
-      url: "https://github.com/Zakhar-the-Robot/zakhar"
+    - name: "📜 Sources ↗"
+      url: "https://github.com/Zakhar-the-Robot"
+      weight: 60
+      
+    - name: "⭐ For Developers ↗"
+      url: "/For_Developers"
       weight: 20
       

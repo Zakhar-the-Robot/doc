@@ -1,8 +1,13 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
+    "folders": [
+        {
+            "path": ".",
+            "name": "Repository"
+        },
+        {
+            "path": "./src/content",
+            "name": "Content"
+        }
     ],
     "tasks": {
         "version": "2.0.0",
