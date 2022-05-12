@@ -4,6 +4,8 @@ title: Main
 
 <img src="logo-light.png" width="250"/>
 
+⚠️   [**DEVELOPERS WANTED!** Read the Page for Developers]({{< ref "For_Developers" >}}) ⚠️
+
 Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.
 
 To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.
@@ -12,10 +14,6 @@ To achieve this the robot uses life concepts for its program architecture: insti
 - [Instagram](https://www.instagram.com/zakhar_the_robot/)
 - [Blog (hackaday.io)](https://hackaday.io/project/171888-zakhar-the-robot)
 <!-- - [Project's how-to on hackster.io (WIP)](https://www.hackster.io/an-dr/zakhar-the-robot-0d8744) -->
-
-**Attention: DEVELOPERS WANTED**
-
-Read a [page for developers]({{< ref "docs/Systems" >}}) for details
 
 ## About
 
@@ -37,6 +35,14 @@ Suggested to split the program into three parts:
 
 An article with detailed explanations and a demonstration:
 - ["Robot with the Conscious: Imitating animal behavior for reducing user's anxiety"](https://blog.agramakov.me/posts/2020-05-29-robot-with-the-conscious/)
+
+## More articles
+
+- [2020/05/29 - Robot with the Conscious: Imitating animal behavior for reducing user’s anxiety - technical_](https://blog.agramakov.me/2020/05/29/robot-with-the-conscious/)
+- [2019/06/01 - Zakhar’s Concept – technical_](https://blog.agramakov.me/2019/06/01/zakhars-concept/)
+- [2019/05/05 - Zakhar relaunch: Zakha_ros – technical_](https://blog.agramakov.me/2019/05/05/zakhar-relaunch-zakha_ros/)
+- [2019/01/10 - Zakhar the Robot – technical_](https://blog.agramakov.me/2019/01/10/zakhar-the-robot/)
+
 ## Structure
 
 Zakhar consists of 4 systems:
@@ -48,27 +54,17 @@ Zakhar consists of 4 systems:
 
 Each system consists of units - standalone devices capable of working into a common communication network. Each unit is a part of some system. [Read more about Zakhar Systems]({{< ref "docs/Systems" >}})
 
-## Related articles
-
-- [2020/05/29 - Robot with the Conscious: Imitating animal behavior for reducing user’s anxiety - technical_](https://blog.agramakov.me/2020/05/29/robot-with-the-conscious/)
-- [2019/06/01 - Zakhar’s Concept – technical_](https://blog.agramakov.me/2019/06/01/zakhars-concept/)
-- [2019/05/05 - Zakhar relaunch: Zakha_ros – technical_](https://blog.agramakov.me/2019/05/05/zakhar-relaunch-zakha_ros/)
-- [2019/01/10 - Zakhar the Robot – technical_](https://blog.agramakov.me/2019/01/10/zakhar-the-robot/)
-
-## Milestones
+## Roadmap
 
 There are two types of milestones, with and without demonstration. Demonstrations intended to show important to the project features followed by an article, milestones without demonstrations mainly focused on technical part of the project
 
-1. ✅ [Reptile Demo](https://github.com/an-dr/zakhar/releases/tag/reptile_demo) - implementing of a simple reptile instinct
+1. ✅ [Reptile Demo](https://github.com/zakhar-the-robot/zakhar/releases/tag/reptile_demo) - implementing of a simple reptile instinct
     - Article: [Robot with the Conscious: Imitating animal behavior for reducing user’s anxiety](https://blog.agramakov.me/2020/05/29/robot-with-the-conscious/)
-2. ✅ [Zakharos](https://github.com/an-dr/zakhar/releases/tag/zakharos) - moving the core to the [ROS](https://www.ros.org/)
-3. 🟧 [ZakharCAN](https://github.com/users/an-dr/projects/3/views/1) - Replace I2C with CAN bus protocol. Construction and stability improvements.
-4. ⬜ [Emotions Demo](https://github.com/users/an-dr/projects/4/views/1) - emotions and reflexes
-5. ⬜ [ZakhaR.Giskard](https://github.com/users/an-dr/projects/5/views/1) (Note: R.Giskard is a robot from novels by I.Asimov which could control human's emotions) - Further development of using conditioned and unconditioned responses
+2. ✅ [Zakharos](https://github.com/zakhar-the-robot/zakhar/releases/tag/zakharos) - moving the core to the [ROS](https://www.ros.org/)
+3. 🟧 [ZakharCAN](https://github.com/orgs/Zakhar-the-Robot/projects/2) - Replace I2C with CAN bus protocol. Construction and stability improvements.
+4. ⬜ Emotions Demo - emotions and reflexes
+5. ⬜ ZakhaR.Giskard (Note: R.Giskard is a robot from novels by I.Asimov which could control human's emotions) - Further development of using conditioned and unconditioned responses
 6. ⬜ Animal Demo - showing the robot to users and collecting responses for making conclusions of this iteration
-
-## 
-
 
 ## License
 
