@@ -1,4 +1,4 @@
-# ZakharCAN (ver. 0.0.0)
+# ZakharCAN (ver. 0.1.0)
 
 The standard is based on the CAN bus protocol. Base CAN configuration:
 
@@ -48,7 +48,7 @@ The version consists of 3 numbers: `Major`.`Minor`.`Patch` (e.g. 2.3.9)
 |Data ID    |Name       |Description
 |-          |-          |-
 |0x0        |DeviceInfo |Used for presence declaration each **Common timeout** (see details bellow). In response for the request should return a data frame with `DATA[0]`:`Major`, `DATA[1]`:`Minor`, `DATA[2]`:`Patch`
-|0x1        |           |Reserved for future
+|0x1        |Command    |Command format is different for each device, but using this data ID all nodes in the network can understand that this message is an input for a particular node.
 |0x2...0x15 |DeviceData |Device specific data defined by each device.
 
 ## Operations
