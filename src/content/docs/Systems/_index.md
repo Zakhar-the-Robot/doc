@@ -6,9 +6,9 @@ title: "Systems and Components"
 
 Zakhar consists of Units. Each Unit is a separate device with specific function.
 
-The Units are designed to communicate with each other though a CAN-bus network. Zakhar has its own simple protocol [ZakharCAN]({{< ref "docs/Communication Protocols/CANbus" >}}) built on top of bare CANbus.
+The Units are designed to communicate with each other though a CAN-bus network. Zakhar has its own simple protocol [qCAN]({{< ref "docs/Communication Protocols/canbus" >}}) built on top of bare CANbus.
 
-Each Unit represents a ZakharCAN device with its unique DeviceID. Since it is possible to have two DeviceID on a single Unit we will use a term Node. Node is an ZakharCAN-compatible CANbus device with a unique DeviceID.
+Each Unit represents a qCAN device with its unique DeviceID. Since it is possible to have two DeviceID on a single Unit we will use a term Node. Node is an qCAN-compatible CANbus device with a unique DeviceID.
 
 Technically all Nodes can send and receive data and commands, but only one (Brain) is developed to perform as the Main Node. Other Nodes can be considered as Secondary ones. The Main Node differs of Secondary Nodes by possibility of command sending. Secondary Nodes can only receive commands and send data.
 
@@ -55,15 +55,9 @@ Here is the full list of Zakhar Units:
 
 The main Node is the Brain Unit. Others are Secondary. Each Secondary periodically sends a special message so the Main Node knows that the Secondary is still connected to the network.
 
-As it was told each Node has a unique DeviceID. List of the Node IDs is bellow. Since DeviceID uses a CANbus's 11-bit ID field the Node IDs are written as CANbus IDs but with `X` on positions that can vary for the same Node. `0x1XX` means that CAN messages with IDs `0x101`, `0x10A`, and `0x104` are considered as messages from the same node.
+As it was told each Node has a unique DeviceID:
 
-|Node/Unit | 11-bit ID |
-|----------|-----------|
-|Brain|`0x1XX`|
-|Wheeled Platform|`0x2XX`|
-|Face|`0x3XX`|
-|Sensors|`0x4XX`|
-|CAN Tool|`0x7XX`|
+<img src="index_devices.svg" width="600">
 
 ## Message Content
 

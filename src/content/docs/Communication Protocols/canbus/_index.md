@@ -13,11 +13,24 @@ qCAN extends bare CAN with the following features:
 - Each device sends periodically a message indicating that the device is accessible
 - Each message contains data about Source and Target devices
 - CAN frame is a message one of the following types:
-    - **Data** - e.g. sensor data
-    - **Command**
-    - **Presence** - each node says to the network that the node is connected
+    - 🔵 **Data** - e.g. sensor data
+    - 🔴 **Command**
+    - 🟡 **Presence** - each node says to the network that the node is connected
 
-Base CAN configuration:
+
+Data messages can be sent to the entire CAN network or to a specific device.
+
+<img src="net_data.svg" width="300">
+
+Commands can be send similarly to all devices or a particular device.
+
+<img src="net_cmd.svg" width="300">
+
+Presence messages must be sent at least once in 3 seconds by each device and can be addressed only to the entire CAN network.
+
+<img src="net_presence.svg" width="300">
+
+**Base CAN configuration**:
 
 - Bitrate: 125 kbits/s
 - ID: 11 bits (standard mode) / 29 bits (extended mode)
