@@ -40,7 +40,7 @@ Here is the full list of Zakhar Units:
     [![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/brain "Go to Repository")
 - **IO (In/Out) System**
     - Face Unit
-    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO" >}} "Go to Documentation")
+    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO/Face" >}} "Go to Documentation")
     [![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/io_face "Go to Repository")
     - Sensor Unit (Sensors)
     [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO" >}} "Go to Documentation")
