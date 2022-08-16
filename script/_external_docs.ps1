@@ -25,7 +25,7 @@ function New-Doc ($SrcRepo, $DestDirectory){
 
 $DocList = @(
     $(New-Doc "https://github.com/Zakhar-the-Robot/brain.git"           "Systems/Brain")
-    $(New-Doc "https://github.com/Zakhar-the-Robot/io.git"              "Systems/IO")
-    $(New-Doc "https://github.com/Zakhar-the-Robot/io_face.git"         "Systems/IO/Face")
-    $(New-Doc "https://github.com/Zakhar-the-Robot/motion_wheels.git"   "Systems/Motion/Wheeled Platform")
+    $(New-Doc "https://github.com/Zakhar-the-Robot/io_face.git"         "Systems/IO_Face")
+    $(New-Doc "https://github.com/Zakhar-the-Robot/io_sensors.git"      "Systems/IO_Sensors")
+    $(New-Doc "https://github.com/Zakhar-the-Robot/motion_wheels.git"   "Systems/Motion_Wheels")
 )
