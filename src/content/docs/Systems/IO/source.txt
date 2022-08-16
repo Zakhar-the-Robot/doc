@@ -1,2 +1,0 @@
-Documentation source: https://github.com/Zakhar-the-Robot/io.git
-Don't modify it here!

@@ -40,14 +40,14 @@ Here is the full list of Zakhar Units:
     [![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/brain "Go to Repository")
 - **IO (In/Out) System**
     - Face Unit
-    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO/Face" >}} "Go to Documentation")
+    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO_Face" >}} "Go to Documentation")
     [![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/io_face "Go to Repository")
     - Sensor Unit (Sensors)
-    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO" >}} "Go to Documentation")
+    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/IO_Sensors" >}} "Go to Documentation")
     [![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/io_sensors "Go to Repository")
 - **Motion System**  
     - Wheeled Platform Unit
-    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/Motion/Wheeled Platform" >}} "Go to Documentation")
+    [![Documentation Button](https://img.shields.io/badge/doc-orange)]({{< ref "docs/Systems/Motion_Wheels" >}} "Go to Documentation")
     [![Source Button](https://img.shields.io/badge/src-grey)](https://github.com/Zakhar-the-Robot/motion_wheels "Go to Repository")
 - **Diagnostics and Development (DnD) System**
     - CAN Tool Unit
