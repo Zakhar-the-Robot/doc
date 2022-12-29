@@ -4,39 +4,36 @@ title: Main
 
 <img src="logo-light.png" width="250"/>
 
-⚠️   [**DEVELOPERS WANTED!** Read the Page for Developers]({{< ref "For_Developers" >}}) ⚠️
+The Zakhar project combines our understanding of biology, psychology, and animal behavior with robotics to create a unique and intuitive approach to creating a robot companion for pets and, ultimately, for humans.
 
-Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.
-
-To achieve this the robot uses life concepts for its program architecture: instincts, emotions, ego, etc.
-
-- [Facebook](https://www.facebook.com/groups/zakhar-the-robot)
-- [Instagram](https://www.instagram.com/zakhar_the_robot/)
 - [Blog (hackaday.io)](https://hackaday.io/project/171888-zakhar-the-robot)
+- [Instagram](https://www.instagram.com/zakhar_the_robot/)
+- [Facebook](https://www.facebook.com/groups/zakhar-the-robot)
 <!-- - [Project's how-to on hackster.io (WIP)](https://www.hackster.io/an-dr/zakhar-the-robot-0d8744) -->
 
 ## About
 
-**Assumed**: the humans can interact the most effective and seamless with other living creatures
+The Zakhar project is a unique and innovative approach to robotics and human-robot interaction that utilizes our understanding of animal behavior and the human and animal brain to create a robot companion for dogs and cats. The ultimate goal of the project is to create a working product that can be a basis to eventually create a human companion.
 
-**Suggested**: to develop a robot's program structure in the way when basics of its logic are understandable from the robot's behavior. The behavior should mimic the animal one (as the human is an animal too).
+The robot's operating system is designed to mimic the way the human and animal brain functions, with three main programs:
 
-Suggested to split the program into three parts:
+- consciousness
+- instincts
+- reflexes
 
-- Conscious
-- Unconscious
-- Reflexes
+The **consciousness** program is responsible for higher cognitive functions such as decision-making and problem-solving, and is similar to the prefrontal cortex in the human brain. 
 
-**Conscious** represents simple intentions: move forward, sleep, run away, search something, etc.
+The **instincts** program consists of sophisticated behavior patterns that can suppress the consciousness and take control of the robot's body in certain situations, much like the amygdala in the human brain which is responsible for emotional responses and the "fight or flight" instinct. 
 
-**Unconscious** is responsible to solve how to realize those intentions: what to do for moving, how to behave if looking something etc.
+The **reflexes** program consists of simple body responses to external stimuli, similar to the spinal cord in the human body which is responsible for reflexive responses to stimuli.
 
-**Reflexes** are small algorithms that can monopolize Unconscious from Conscious in some very explicit situations. E.g. panic and fear if something breaking, convulsions if robot stuck and can't move as the conscious tells.
+The **instincts** program interacts with the **consciousness** program through the Emotion Core, a piece of software that simulates the endocrine system and represents a table of hormones that can be affected by sensor data and by the **consciousness** and **instincts** programs. The endocrine system in the human and animal body is responsible for producing and secreting hormones that regulate various bodily functions and can affect behavior and emotion. By simulating this system, the robot is able to experience a range of “emotions” and behaviors that are familiar to its human and animal users.
 
-An article with detailed explanations and a demonstration:
-- ["Robot with the Conscious: Imitating animal behavior for reducing user's anxiety"](https://blog.agramakov.me/posts/2020-05-29-robot-with-the-conscious/)
+This familiarity with emotion-controlled behavior in theory should provide a simple and understandable user experience for all time of animal users (pets and human beings). The project aims to utilize this animal-like user experience to create a final product: a robot companion for cats and dogs, with two sets of instincts and main programs tailored for interaction with each species. The physical shape of the product is currently being considered and will be developed in future development stages.
 
-## More articles
+The project is open source and well-documented and published under the GPL3 license.
+
+## Some articles
 
 - [2020/05/29 - Robot with the Conscious: Imitating animal behavior for reducing user’s anxiety - technical_](https://blog.agramakov.me/2020/05/29/robot-with-the-conscious/)
 - [2019/06/01 - Zakhar’s Concept – technical_](https://blog.agramakov.me/2019/06/01/zakhars-concept/)

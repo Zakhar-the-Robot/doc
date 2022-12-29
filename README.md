@@ -4,4 +4,4 @@
 
 Zakhar is a robotics UX project. The main aim is to decrease the anxiety of users interacting with a robot.
 
-This repository are sources of the [project's main page](https://zakhar-the-robot.github.io/doc/).
+This repository is the sources of the [project's main page](https://zakhar-the-robot.github.io/doc/).
